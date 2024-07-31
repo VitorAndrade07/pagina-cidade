@@ -1,0 +1,17 @@
+#button4{
+    background-color: #ee376a;
+    display: block;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    border: none; /* Remove a borda padrão do botão */
+}
+
+#button4:hover{
+    background-color: #5bfe45;
+    transform: scale(1.10);
+
+}

@@ -1,0 +1,17 @@
+#button3{
+    background-color: rgba(255,227,87,.92);
+    display: block;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    border: none; /* Remove a borda padrão do botão */
+}
+
+#button3:hover{
+        background-color: #5bfe45;
+        transform: scale(1.10);
+
+}

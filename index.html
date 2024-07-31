@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saitama - Japão</title>
+    <link rel="icon" type="image/x-icon" href="image/novo saitama.jpg">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Oswald:wght@200..700&family=Sree+Krushnadevaraya&family=Varela&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            border: 2px solid black;
+            text-align: center;
+            font-size: 60px;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+      
+        .container {
+            display: flex;
+            justify-content: center; /* Centraliza os botões horizontalmente */
+            gap: 10px; /* Espaço entre os botões */
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Saitama</h1>
+    <p style="font-family: Oswald, sans-serif;">
+        Saitama, fundada oficialmente em 1º de abril de 2001, é a capital da província de Saitama, situada ao norte de Tóquio. Parte da Grande Tóquio, a cidade combina áreas urbanas e residenciais,
+        oferecendo uma atmosfera mais tranquila. Destaca-se pelo Saitama Super Arena, parques, centros comerciais e vários museus, e é uma opção popular para quem trabalha em Tóquio, mas prefere um ambiente mais calmo.
+    </p>
+    
+    <div class="image-container">
+        <img id="image" src="image/atracao1.jpg" alt="Saitama" width="600">
+        <div id="caption" class="image-caption">
+            Kawagoe: o encantador Pequeno Edo do Japão. Explore ruas históricas, lojas tradicionais e sinta a atmosfera da era Edo nesta cidade fascinante, a poucos passos de Tóquio.
+        </div>
+    </div>
+
+
+    <div class="container">
+            <button id="button1"  onclick="changeContent('image/atracao1.jpg', 'Kawagoe: o encantador Pequeno Edo do Japão. Explore ruas históricas, lojas tradicionais e sinta a atmosfera da era Edo nesta cidade fascinante, a poucos passos de Tóquio.')" class="botao">1</button>
+            <button id="button2"  onclick="changeContent('image/atracao2.jpg', 'Desfrute da exuberância do Festival Noturno de Chichibu em Saitama, um evento deslumbrante com carros alegóricos iluminados e desfiles vibrantes que capturam a essência cultural do Japão durante a noite.')" class="botao">2</button>
+            <button id="button3"  onclick="changeContent('image/atracao3.jpg', 'O Canal Subterrâneo de Escoamento da Área Metropolitana é um sistema subterrâneo em Tóquio projetado para prevenir inundações, com túneis de 6 km e um reservatório de 200 mil metros cúbicos')" class="botao">3</button>
+            <button id="button4"  onclick="changeContent('image/atracao4.jpg', 'Descubra o fascinante mundo das ferrovias no Museu Ferroviário de Saitama. Explore locomotivas históricas, maquetes detalhadas e exposições interativas que narram a evolução das ferrovias japonesas e sua importância na modernização do Japão.')" class="botao">4</button>
+    </div>
+
+
+
+    <script>
+        function changeContent(imageSrc, captionText) {
+            document.getElementById('image').src = imageSrc;
+            document.getElementById('caption').textContent = captionText;
+        }
+    </script>
+</body>
+</html>
